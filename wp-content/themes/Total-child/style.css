@@ -1,0 +1,300 @@
+/*
+ Theme Name:   Total Child
+ Theme URI:    http://wpexplorer-themes.com/total/docs-category/getting-started/
+ Description:  Total Child Theme
+ Author:       Instituto de Alta Performance
+ Author URI:   http://ialtaperformance.com
+ Template:     Total
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  total-theme-child
+*/
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('fonts/Gotham-Bold.otf');
+}
+
+@font-face {
+    font-family: 'BLANCH-CAPS';
+    src: url('fonts/BLANCH_CAPS.otf');
+}
+
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('fonts/Gotham-Light.otf');
+}
+
+h1{
+	font-family:BLANCH-CAPS;
+	font-size:38px;
+	color:#183F76;
+}
+
+h2{
+	font-family:BLANCH-CAPS;
+	font-size:34px;
+	color:#183F76;
+}
+
+p{
+	font-family:Gotham-Light;
+	font-size:14px;
+}
+
+.wpex-vc-column-wrapper{
+	margin-bottom:10px !important;
+}
+
+#menu-principal{
+	font-family:Gotham-Light;
+	font-size:14px;
+}
+
+.page-header-title{
+	font-family:BLANCH-CAPS !important;
+	font-size:34px !important;
+	color:#183F76 !important;
+}
+
+h3{
+	font-family:Gotham-Light;
+	font-size:18px;
+	color:#183F76;
+}
+
+/*AJUSTE CONTATO HOME*/
+.container, .vc_row-fluid.container{
+	width:80% !important;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"]{
+	background-color:#ffffff;
+	border:solid 1px #183F76;
+}
+
+.wpcf7 input[type="text"]:hover,
+.wpcf7 input[type="email"]:hover,
+.wpcf7 input[type="tel"]:hover
+{
+	background-color:#ffffff;
+	border:solid 1px #48C1F0;
+}
+
+.wpcf7 input[type="text"]:focus,
+.wpcf7 input[type="email"]:focus,
+.wpcf7 input[type="tel"]:focus
+{
+	background-color:#ffffff;
+	border:solid 1px #48C1F0;
+}
+
+.form-sessao-gratuita{
+	width:100%;
+	margin:0 auto;
+}
+
+.form-sessao-gratuita p{
+	width:30%;
+	float:left;
+	margin-right:1%;
+}
+
+p#btn-sessao-gratis{
+	width:6%;
+	margin-top:2.3%;
+}
+
+.form-sessao-gratuita input[type="submit"]:hover{
+	background-color:#DAB138;
+	color:#ffffff;
+}
+
+.form-palestra input[type="submit"]:hover{
+	background-color:#56C4F1;
+	color:#ffffff;
+}
+
+/*AJUSTE RESPONSIVO CONTATO HOME*/
+@media screen and (min-width: 640px){
+	div.form-palestra{width: 100%;margin: 0 auto;}
+	.wpcf7 input[type="text"],
+	.wpcf7 input[type="email"],
+	.wpcf7 input[type="tel"]{background-color:#ffffff;border:solid 1px #183F76;width:100%;}
+	p#btn-palestra{width:50%;}
+	.form-palestra input[type="submit"]{width:80%;}
+	.wpcf7 textarea{background-color:#ffffff;border:solid 1px #183F76;}
+	.wpcf7 textarea:hover{background-color:#ffffff;border:solid 1px #48C1F0;}
+	.wpcf7 textarea:focus{background-color:#ffffff;border:solid 1px #48C1F0;}
+}
+
+@media screen and (max-width: 640px){
+	div.form-palestra{width:100%;}
+	.wpcf7 input[type="text"],
+	.wpcf7 input[type="email"],
+	.wpcf7 input[type="tel"]{background-color:#ffffff;border:solid 1px #183F76;width:100%;}
+	p#btn-palestra{width:50%;}
+	.form-palestra input[type="submit"]{width:80%;}
+	.wpcf7 textarea{background-color:#ffffff;border:solid 1px #183F76;}
+	.wpcf7 textarea:hover{background-color:#ffffff;border:solid 1px #48C1F0;}
+	.wpcf7 textarea:focus{background-color:#ffffff;border:solid 1px #48C1F0;}
+}
+
+@media screen and (max-width: 1024px){
+	.form-palestra p{width: 100%;}
+	p#form-submit{width:auto; margin-top:2%;}
+	.wpcf7 input[type="text"],
+	.wpcf7 input[type="email"],
+	.wpcf7 input[type="tel"]{background-color:#ffffff;border:solid 1px #183F76;width:100%;}
+	p#btn-palestra{width:50%;}
+	div.wpcf7 .wpcf7-mail-sent-ok{height:330px;}
+	.wpcf7 textarea{background-color:#ffffff;border:solid 1px #183F76;}
+	.wpcf7 textarea:hover{background-color:#ffffff;border:solid 1px #48C1F0;}
+	.wpcf7 textarea:focus{background-color:#ffffff;border:solid 1px #48C1F0;}
+}
+
+@media screen and (min-width: 1024px){
+	.form-palestra p{width: 49%; float:left;}
+	p#form-submit{width:18%; margin-top:3%;}
+	.wpcf7 input[type="text"],
+	.wpcf7 input[type="email"],
+	.wpcf7 input[type="tel"]{background-color:#ffffff;border:solid 1px #183F76;width:100%;}
+	p#btn-palestra{width:11%;}
+	#no-float{float:right;}
+	#caixa-msgm{width:100%}
+	.wpcf7 textarea{background-color:#ffffff;border:solid 1px #183F76;}
+	.wpcf7 textarea:hover{background-color:#ffffff;border:solid 1px #48C1F0;}
+	.wpcf7 textarea:focus{background-color:#ffffff;border:solid 1px #48C1F0;}
+}
+
+@media screen and (min-width: 1730px){
+	.form-palestra p{float:left;}
+	p#form-submit{width:20%; margin-top:2%;}
+}
+
+/*WORKAROUND TO FIX MENU OVERLAPING LOGO IN SMALL RESOLUTION*/
+@media only screen and (max-width: 1170px) {
+.navbar-style-one wpex-dropdowns-caret .navigation main-navigation , #site-navigation-wrap, #site-navigation{
+	display:none;
+	}
+
+.navbar-style-one wpex-dropdowns-caret .navigation main-navigation , #site-navigation-wrap, #site-navigation{
+	display:block;
+	}
+	
+.navbar-style-one wpex-dropdowns-caret .navigation main-navigation , #site-navigation-wrap, #site-navigation{
+	display:block;
+	}
+}
+
+/* Ajuste Botão Login e Logout do menu principal */
+.login-modulo{
+	background-color:#183F76;
+	color:#ffffff;
+	border-radius:5px;
+	height:33px;
+	margin-top:10px;
+}
+
+.login-modulo:hover{
+	background-color:#56C4F1 !important;
+	color:#ffffff;
+	border-radius:5px;
+	height:33px;
+	margin-top:10px;
+}
+
+.login-modulo a{
+	color:#ffffff !important;
+	margin-top:-10px !important;
+}
+
+.logout-modulo{
+	background-color:#56C4F1;
+	color:#ffffff;
+	border-radius:5px;
+	height:33px;
+	margin-top:10px;
+}
+
+.logout-modulo:hover{
+	background-color:#183F76 !important;
+	color:#ffffff;
+	border-radius:5px;
+	height:33px;
+	margin-top:10px;
+}
+
+.logout-modulo a{
+	color:#ffffff !important;
+	margin-top:-10px !important;
+}
+
+/*Ajustes Learnpress*/
+.course-price{
+	display:none !important;
+}
+
+.course-students{
+	display:none !important;
+}
+
+.course-author{
+	display:none !important;
+}
+
+.learn-press-course-status{
+	display:none !important;
+}
+
+.course-progress{
+	display:none !important;
+}
+
+.popup-title{
+	background-color:#183F76 !important;
+}
+
+.popup-menu{
+	background-color:#183F76 !important;
+}
+
+.sidebar-hide-btn:hover{
+	background-color:#56C4F1 !important;
+}
+
+.popup-close:hover{
+	background-color:#56C4F1 !important;
+}
+
+#course-curriculum-popup #popup-main #popup-header .popup-menu{
+	border-right:solid 1px #ffffff !important;
+}
+
+#learn-press-course-curriculum ul.curriculum-sections, #learn-press-course-curriculum ul.section-content{
+	background-color:#fefefe !important;
+}
+
+.learn-press-search-course-form{
+	display:none !important;
+}
+
+.course-instructor{
+	display:none !important;
+}
+
+#page-featured-img img{
+	margin:0 !important;
+}
+
+.learn-press-checkout-comment{
+	display:none !important;
+}
+
+.course-name, .course-total{
+	padding:10px 50px 10px 0px !important;
+}
