@@ -29,11 +29,12 @@ $course_results    = $course->evaluate_course_results();
 ?>
 <div class="learn-press-course-results-progress">
 	<div class="items-progress">
-		<?php $user_info = get_userdata(1);
-	      echo 'Olá ' . $user_info->user_login . "<br>";
+		<?php 
+			//$user_info = get_userdata(1);
+	      //echo 'Olá ' . $user_info->user_login . "<br>";
 	      //echo 'User roles: ' . implode(', ', $user_info->roles) . "\n";
-	      echo 'Seu ID de usuário é : ' . $user_info->ID . "<br>";
-		  echo 'Seu e-mail cadastrado é: ' . $user_info->user_email . "<br>";
+	      //echo 'Seu ID de usuário é : ' . $user_info->ID . "<br>";
+		  //echo 'Seu e-mail cadastrado é: ' . $user_info->user_email . "<br>";
 		?>
 		<?php if ( $heading !== false ): ?>
 			<h4 class="lp-course-progress-heading"><?php echo esc_html_e( 'Progresso', 'learnpress' ); ?></h4>

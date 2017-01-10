@@ -193,7 +193,7 @@ p#btn-sessao-gratis{
 
 /* Ajuste Botão Login e Logout do menu principal */
 .login-modulo{
-	background-color:#183F76;
+	background-color:#183F76 !important;
 	color:#ffffff;
 	border-radius:5px;
 	height:33px;
@@ -232,6 +232,7 @@ p#btn-sessao-gratis{
 .logout-modulo a{
 	color:#ffffff !important;
 	margin-top:-10px !important;
+	border-bottom:none !important;
 }
 
 /*Ajustes Learnpress*/
@@ -297,4 +298,68 @@ p#btn-sessao-gratis{
 
 .course-name, .course-total{
 	padding:10px 50px 10px 0px !important;
+}
+
+#site-header{
+	background-color:#e5e5e6 !important;
+}
+
+.sf-menu li:hover{
+	background-color:#0B417F !important;
+	color:#000000 !important;
+}
+
+.local-scroll:hover, .menu-item:hover, .menu-item-type-custom:hover, .menu-item-object-custom:hover, .current_page_item:hover, .menu-item-home:hover{
+	background-color:#0B417F !important;
+	color:#000000 !important;
+}
+
+#site-navigation a:hover{
+	color:#ffffff !important;
+}
+
+#site-navigation .dropdown-menu >.current-menu-item >a{
+	background-color:#0B417F !important;
+	color:#ffffff !important;
+}
+
+.navbar-style-one .dropdown-menu > li > a{
+	/*border-bottom:solid 2px #0B417F;*/
+	color:#0B417F;
+}
+
+.site-search-toggle, .search-dropdown-toggle{
+	border-bottom:none !important;
+}
+
+.saiba-mais{
+	background-color:#259b5f;
+	color:#ffffff;
+	padding:12px;
+	text-align:center;
+	text-decoration:none;
+}
+
+.saiba-mais:hover{
+	background-color:#56C4F1;
+	color:#ffffff;
+	padding:12px;
+	text-align:center;
+	text-decoration:none;
+}
+
+.ajuste-depoimento{
+	margin-top:-18%;
+	z-index:-1;
+}
+
+.conteudo-home{
+	width:80%;
+	margin:0 auto;
+}
+
+.conteudo-home-blog{
+	width:80%;
+	margin:-2% auto;
+	background-color:rgba(255,255,255,0);
 }
