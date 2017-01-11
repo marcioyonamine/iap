@@ -28,14 +28,14 @@
 	}
 
 h1{
-	font-family:BLANCH-CAPS;
-	font-size:38px;
+	font-family:Gotham-Bold !important;
+	font-size:30px;
 	color:#183F76;
 }
 
 h2{
-	font-family:BLANCH-CAPS;
-	font-size:34px;
+	font-family:Gotham-Bold !important;
+	font-size:28px;
 	color:#183F76;
 }
 
@@ -64,8 +64,8 @@ p::selection{
 }
 
 .page-header-title{
-	font-family:BLANCH-CAPS !important;
-	font-size:34px !important;
+	font-family:Gotham-Bold !important;
+	font-size:24px !important;
 	color:#183F76 !important;
 }
 
@@ -75,141 +75,82 @@ h3{
 	color:#183F76;
 }
 
-/*AJUSTE CONTATO HOME*/
-.wpcf7-form{
-	width:65%;
-	margin:0 auto;
-}
+/*AJUSTE FORM PÁGINA CONTATO*/
 
-.container, .vc_row-fluid.container{
-	width:80% !important;
-}
-
-.wpcf7 input[type="text"],
-.wpcf7 input[type="email"],
-.wpcf7 input[type="tel"]{
-	background-color:#ffffff;
-	border:solid 1px #183F76;
-}
-
-.wpcf7 input[type="text"]:hover,
-.wpcf7 input[type="email"]:hover,
-.wpcf7 input[type="tel"]:hover
-{
-	background-color:#ffffff;
-	border:solid 1px #48C1F0;
-}
-
-.wpcf7 input[type="text"]:focus,
-.wpcf7 input[type="email"]:focus,
-.wpcf7 input[type="tel"]:focus
-{
-	background-color:#ffffff;
-	border:solid 1px #48C1F0;
-}
-
-.form-sessao-gratuita{
+#formulario-input{
 	width:100%;
+	border:solid 1px #b3b3b3;
+}
+
+#formulario-input:focus{
+	width:100%;
+	border:solid 1px #48C1F0;
+	background-color:#ffffff;
+}
+
+/*AJUSTE FORM RELATÓRIO DE SESSÃO*/
+.caixa-rel-sessao{
+	text-align:left; 
+	width:65%; 
 	margin:0 auto;
 }
 
-.form-sessao-gratuita p{
-	width:30%;
-	float:left;
-	margin-right:1%;
+#rel-sessao{
+	width:100%;
+	border:solid 1px #b3b3b3;
 }
 
-p#btn-sessao-gratis{
-	width:6%;
-	margin-top:2.3%;
+#rel-sessao:focus{
+	width:100%;
+	border:solid 1px #48C1F0;
+	background-color:#ffffff;
 }
 
-#select-relatorio{
-	background-color: #ffffff;
-    border: solid 1px #044B64;
+#select-rel-sessao{
+	background-color:#f7f7f7;
+	border: solid 1px #b3b3b3;
 	width:100%;
 	height:40px;
 }
 
-.form-sessao-gratuita input[type="submit"]:hover{
-	background-color:#DAB138;
-	color:#ffffff;
+#select-rel-sessao:focus{
+	background-color: #ffffff;
+    border: solid 1px #48C1F0;
+	width:100%;
+	height:40px;
 }
 
-.form-palestra input[type="submit"]:hover{
-	background-color:#56C4F1;
-	color:#ffffff;
+/*AJUSTE FORM RELATÓRIO DE FASE*/
+#rel-fase{
+	width:100%;
+	border:solid 1px #b3b3b3;
 }
 
-.form-padrao{
-	text-align:left;
-	width:65%;
+#rel-fase:focus{
+	width:100%;
+	border:solid 1px #48C1F0;
+	background-color:#ffffff;
 }
 
-/*AJUSTE RESPONSIVO CONTATO HOME*/
-@media screen and (min-width: 640px){
-	div.form-palestra{width: 100%;margin: 0 auto;}
-	.wpcf7 input[type="text"],
-	.wpcf7 input[type="email"],
-	.wpcf7 input[type="tel"]{background-color:#ffffff;border:solid 1px #183F76;width:100%;}
-	p#btn-palestra{width:50%;}
-	.form-palestra input[type="submit"]{width:80%;}
-	.wpcf7 textarea{background-color:#ffffff;border:solid 1px #183F76;}
-	.wpcf7 textarea:hover{background-color:#ffffff;border:solid 1px #48C1F0;}
-	.wpcf7 textarea:focus{background-color:#ffffff;border:solid 1px #48C1F0;}
-	.wpcf7-form{width:85%; margin:0 auto;}
-	.form-padrao{text-align:left;width:65%;}
+#select-rel-fase{
+	background-color:#f7f7f7;
+	border: solid 1px #b3b3b3;
+	width:100%;
+	height:40px;
 }
 
+#select-rel-fase:focus{
+	background-color: #ffffff;
+    border: solid 1px #48C1F0;
+	width:100%;
+	height:40px;
+}
+
+/*AJUSTE RESPONSIVO RELATÓRIOS TELAS ATÉ 640px*/
 @media screen and (max-width: 640px){
-	div.form-palestra{width:100%;}
-	.wpcf7 input[type="text"],
-	.wpcf7 input[type="email"],
-	.wpcf7 input[type="tel"]{background-color:#ffffff;border:solid 1px #183F76;width:100%;}
-	p#btn-palestra{width:50%;}
-	.form-palestra input[type="submit"]{width:80%;}
-	.wpcf7 textarea{background-color:#ffffff;border:solid 1px #183F76;}
-	.wpcf7 textarea:hover{background-color:#ffffff;border:solid 1px #48C1F0;}
-	.wpcf7 textarea:focus{background-color:#ffffff;border:solid 1px #48C1F0;}
-	.wpcf7-form{width:85%; margin:0 auto;}
-	.form-padrao{text-align:left;width:65%;}
+	.caixa-rel-sessao{width:100%}
 }
 
-@media screen and (max-width: 1024px){
-	.form-palestra p{width: 100%;}
-	p#form-submit{width:auto; margin-top:2%;}
-	.wpcf7 input[type="text"],
-	.wpcf7 input[type="email"],
-	.wpcf7 input[type="tel"]{background-color:#ffffff;border:solid 1px #183F76;width:100%;}
-	p#btn-palestra{width:50%;}
-	div.wpcf7 .wpcf7-mail-sent-ok{height:330px;}
-	.wpcf7 textarea{background-color:#ffffff;border:solid 1px #183F76;}
-	.wpcf7 textarea:hover{background-color:#ffffff;border:solid 1px #48C1F0;}
-	.wpcf7 textarea:focus{background-color:#ffffff;border:solid 1px #48C1F0;}
-	.wpcf7-form{width:85%; margin:0 auto;}
-	.form-padrao{text-align:left;width:65%;}
-}
-
-@media screen and (min-width: 1024px){
-	.form-palestra p{width: 49%; float:left;}
-	p#form-submit{width:18%; margin-top:3%;}
-	.wpcf7 input[type="text"],
-	.wpcf7 input[type="email"],
-	.wpcf7 input[type="tel"]{background-color:#ffffff;border:solid 1px #183F76;width:100%;}
-	p#btn-palestra{width:11%;}
-	#no-float{float:right;}
-	#caixa-msgm{width:100%}
-	.wpcf7 textarea{background-color:#ffffff;border:solid 1px #183F76;}
-	.wpcf7 textarea:hover{background-color:#ffffff;border:solid 1px #48C1F0;}
-	.wpcf7 textarea:focus{background-color:#ffffff;border:solid 1px #48C1F0;}
-	.wpcf7-form{width:65%; margin:0 auto;}
-	.form-padrao{text-align:left;width:65%;}
-}
-
-@media screen and (min-width: 1730px){
-	.form-palestra p{float:left;}
-	p#form-submit{width:20%; margin-top:2%;}
-}
 
 /*WORKAROUND TO FIX MENU OVERLAPING LOGO IN SMALL RESOLUTION*/
 @media only screen and (max-width: 1170px) {
