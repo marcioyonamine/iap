@@ -25,7 +25,7 @@
 @font-face {
     font-family: 'Gotham-Light';
     src: url('fonts/Gotham-Light.otf');
-}
+	}
 
 h1{
 	font-family:BLANCH-CAPS;
@@ -42,6 +42,16 @@ h2{
 p{
 	font-family:Gotham-Light;
 	font-size:14px;
+}
+
+p::-moz-selection {
+	color: #ffffff;
+	background-color:#183F76;
+}
+
+p::selection{
+	color: #ffffff;
+	background-color:#183F76;
 }
 
 .wpex-vc-column-wrapper{
@@ -66,6 +76,11 @@ h3{
 }
 
 /*AJUSTE CONTATO HOME*/
+.wpcf7-form{
+	width:65%;
+	margin:0 auto;
+}
+
 .container, .vc_row-fluid.container{
 	width:80% !important;
 }
@@ -109,6 +124,13 @@ p#btn-sessao-gratis{
 	margin-top:2.3%;
 }
 
+#select-relatorio{
+	background-color: #ffffff;
+    border: solid 1px #044B64;
+	width:100%;
+	height:40px;
+}
+
 .form-sessao-gratuita input[type="submit"]:hover{
 	background-color:#DAB138;
 	color:#ffffff;
@@ -117,6 +139,11 @@ p#btn-sessao-gratis{
 .form-palestra input[type="submit"]:hover{
 	background-color:#56C4F1;
 	color:#ffffff;
+}
+
+.form-padrao{
+	text-align:left;
+	width:65%;
 }
 
 /*AJUSTE RESPONSIVO CONTATO HOME*/
@@ -130,6 +157,8 @@ p#btn-sessao-gratis{
 	.wpcf7 textarea{background-color:#ffffff;border:solid 1px #183F76;}
 	.wpcf7 textarea:hover{background-color:#ffffff;border:solid 1px #48C1F0;}
 	.wpcf7 textarea:focus{background-color:#ffffff;border:solid 1px #48C1F0;}
+	.wpcf7-form{width:85%; margin:0 auto;}
+	.form-padrao{text-align:left;width:65%;}
 }
 
 @media screen and (max-width: 640px){
@@ -142,6 +171,8 @@ p#btn-sessao-gratis{
 	.wpcf7 textarea{background-color:#ffffff;border:solid 1px #183F76;}
 	.wpcf7 textarea:hover{background-color:#ffffff;border:solid 1px #48C1F0;}
 	.wpcf7 textarea:focus{background-color:#ffffff;border:solid 1px #48C1F0;}
+	.wpcf7-form{width:85%; margin:0 auto;}
+	.form-padrao{text-align:left;width:65%;}
 }
 
 @media screen and (max-width: 1024px){
@@ -155,6 +186,8 @@ p#btn-sessao-gratis{
 	.wpcf7 textarea{background-color:#ffffff;border:solid 1px #183F76;}
 	.wpcf7 textarea:hover{background-color:#ffffff;border:solid 1px #48C1F0;}
 	.wpcf7 textarea:focus{background-color:#ffffff;border:solid 1px #48C1F0;}
+	.wpcf7-form{width:85%; margin:0 auto;}
+	.form-padrao{text-align:left;width:65%;}
 }
 
 @media screen and (min-width: 1024px){
@@ -169,6 +202,8 @@ p#btn-sessao-gratis{
 	.wpcf7 textarea{background-color:#ffffff;border:solid 1px #183F76;}
 	.wpcf7 textarea:hover{background-color:#ffffff;border:solid 1px #48C1F0;}
 	.wpcf7 textarea:focus{background-color:#ffffff;border:solid 1px #48C1F0;}
+	.wpcf7-form{width:65%; margin:0 auto;}
+	.form-padrao{text-align:left;width:65%;}
 }
 
 @media screen and (min-width: 1730px){
