@@ -78,13 +78,29 @@ h3{
 /*AJUSTE FORM PÁGINA CONTATO*/
 
 #formulario-input{
+	border:0;
+	border-bottom:solid 1px #b3b3b3;
+	outline:0;
 	width:100%;
-	border:solid 1px #b3b3b3;
+	background-color:transparent;
 }
 
 #formulario-input:focus{
+	border:0;
+	border-bottom:solid 1px #48C1F0;
+	outline:0;
 	width:100%;
-	border:solid 1px #48C1F0;
+	background-color:transparent;
+}
+
+#txt-area-contato{
+	border: solid 1px #b3b3b3;
+	width:100%;
+}
+
+#txt-area-contato:focus{
+	border: solid 1px #48C1F0;
+	width:100%;
 	background-color:#ffffff;
 }
 
@@ -96,18 +112,23 @@ h3{
 }
 
 #rel-sessao{
+	border:0;
+	border-bottom:solid 1px #b3b3b3;
+	outline:0;
 	width:100%;
-	border:solid 1px #b3b3b3;
+	background-color:transparent;
 }
 
 #rel-sessao:focus{
+	border:0;
+	border-bottom:solid 1px #48C1F0;
+	outline:0;
 	width:100%;
-	border:solid 1px #48C1F0;
-	background-color:#ffffff;
+	background-color:transparent;
 }
 
 #select-rel-sessao{
-	background-color:#f7f7f7;
+	background-color:#ffffff;
 	border: solid 1px #b3b3b3;
 	width:100%;
 	height:40px;
@@ -120,20 +141,36 @@ h3{
 	height:40px;
 }
 
-/*AJUSTE FORM RELATÓRIO DE FASE*/
-#rel-fase{
+#txt-area-rel-sessao{
+	border: solid 1px #b3b3b3;
 	width:100%;
-	border:solid 1px #b3b3b3;
 }
 
-#rel-fase:focus{
+#txt-area-rel-sessao:focus{
+	border: solid 1px #48C1F0;
 	width:100%;
-	border:solid 1px #48C1F0;
 	background-color:#ffffff;
 }
 
+/*AJUSTE FORM RELATÓRIO DE FASE*/
+#rel-fase{
+	border:0;
+	border-bottom:solid 1px #b3b3b3;
+	outline:0;
+	width:100%;
+	background-color:transparent;
+}
+
+#rel-fase:focus{
+	border:0;
+	border-bottom:solid 1px #48C1F0;
+	outline:0;
+	width:100%;
+	background-color:transparent;
+}
+
 #select-rel-fase{
-	background-color:#f7f7f7;
+	background-color:#ffffff;
 	border: solid 1px #b3b3b3;
 	width:100%;
 	height:40px;
@@ -146,7 +183,18 @@ h3{
 	height:40px;
 }
 
-/*AJUSTE RESPONSIVO RELATÓRIOS TELAS ATÉ 640px*/
+#txt-area-rel-fase{
+	border: solid 1px #b3b3b3;
+	width:100%;
+}
+
+#txt-area-rel-fase:focus{
+	border: solid 1px #48C1F0;
+	width:100%;
+	background-color:#ffffff;
+}
+
+/*AJUSTE RESPONSIVO RELATÓRIOS*/
 @media screen and (max-width: 640px){
 	.caixa-rel-sessao{width:100%}
 }
