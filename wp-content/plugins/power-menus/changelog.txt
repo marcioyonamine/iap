@@ -1,0 +1,18 @@
+Plugin Name: Power Menus
+Author: WP Idiots
+
+1.1.1 - 25/FEB/2014
+----------------------------------------------------------------------
+- Removed front-end notices (http://wordpress.org/support/topic/a-bug-and-an-enhancement?replies=2)
+
+1.1 - 20/FEB/2014
+----------------------------------------------------------------------
+- Added additional rules in order to show menu items for non-logged in users and hide it from logged in one
+
+1.0.1 - 19/FEB/2014
+----------------------------------------------------------------------
+- Applied a small CSS fix for Secure Page dropdown in admin
+
+1.0 - 01/FEB/2014
+----------------------------------------------------------------------
+- First Release.
