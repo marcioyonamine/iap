@@ -44,18 +44,23 @@ p{
 	font-size:14px;
 }
 
-p::-moz-selection {
+::-moz-selection {
 	color: #ffffff;
 	background-color:#183F76;
 }
 
-p::selection{
+::selection{
 	color: #ffffff;
 	background-color:#183F76;
 }
 
 .wpex-vc-column-wrapper{
 	margin-bottom:10px !important;
+}
+
+ul li{
+	font-family:Gotham-Light;
+	font-size:14px;
 }
 
 #menu-principal{
@@ -386,4 +391,23 @@ h3{
 	width:80%;
 	margin:-2% auto;
 	background-color:rgba(255,255,255,0);
+}
+
+.menu-membros a{
+	color:#183F76;
+}
+
+.menu-membros a:hover{
+	color:#ffffff;
+	background-color:#183F76;
+}
+
+ul.menu-membros{
+	background-color:#ffffff;
+	list-style-type:none;
+}
+
+li.menu-membros{
+	background-color:#ffffff;
+	list-style-type:none;
 }
