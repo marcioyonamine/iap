@@ -505,6 +505,7 @@ input[type="text"].input-txt-rel-fase:focus{
 	background-color:#ffffff;
 }
 
+/*AJUSTES MENSAGENS RELATÓRIOS*/
 .form-sucesso{
 	background-color:#DFF0D8;
 	padding:10px;
@@ -521,6 +522,8 @@ input[type="text"].input-txt-rel-fase:focus{
 	color:#a94442;
 }
 
+
+/*AJUSTES ALTERA SENHA*/
 input[type="password"].input-pwd{
 	background-color:transparent;
 	border:solid 1px #b3b3b3;
