@@ -1,15 +1,15 @@
 /*
- Theme Name:   Total Child
- Theme URI:    http://wpexplorer-themes.com/total/docs-category/getting-started/
- Description:  Total Child Theme
- Author:       Instituto de Alta Performance
- Author URI:   http://ialtaperformance.com
- Template:     Total
- Version:      1.0.0
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  total-theme-child
+	Theme Name:   Total Child
+	Theme URI:    http://wpexplorer-themes.com/total/docs-category/getting-started/
+	Description:  Total Child Theme
+	Author:       Instituto de Alta Performance
+	Author URI:   http://ialtaperformance.com
+	Template:     Total
+	Version:      1.0.0
+	License:      GNU General Public License v2 or later
+	License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+	Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+	Text Domain:  total-theme-child
 */
 
 @font-face {
@@ -25,7 +25,7 @@
 @font-face {
     font-family: 'Gotham-Light';
     src: url('fonts/Gotham-Light.otf');
-	}
+}
 
 h1{
 	font-family:Gotham-Bold !important;
@@ -207,16 +207,16 @@ h3{
 
 /*WORKAROUND TO FIX MENU OVERLAPING LOGO IN SMALL RESOLUTION*/
 @media only screen and (max-width: 1170px) {
-.navbar-style-one wpex-dropdowns-caret .navigation main-navigation , #site-navigation-wrap, #site-navigation{
-	display:none;
-	}
-
-.navbar-style-one wpex-dropdowns-caret .navigation main-navigation , #site-navigation-wrap, #site-navigation{
-	display:block;
+	.navbar-style-one wpex-dropdowns-caret .navigation main-navigation , #site-navigation-wrap, #site-navigation{
+		display:none;
 	}
 	
-.navbar-style-one wpex-dropdowns-caret .navigation main-navigation , #site-navigation-wrap, #site-navigation{
-	display:block;
+	.navbar-style-one wpex-dropdowns-caret .navigation main-navigation , #site-navigation-wrap, #site-navigation{
+		display:block;
+	}
+	
+	.navbar-style-one wpex-dropdowns-caret .navigation main-navigation , #site-navigation-wrap, #site-navigation{
+		display:block;
 	}
 }
 
@@ -338,7 +338,14 @@ h3{
 	color:#000000 !important;
 }
 
+/* DEIXEI COMENTADO PRA AJUSTAR O MENU INTERNO DOS MEMBROS E TRAINERS. SE DER PROBLEMA VOLTO AQUI
 .local-scroll:hover, .menu-item:hover, .menu-item-type-custom:hover, .menu-item-object-custom:hover, .current_page_item:hover, .menu-item-home:hover{
+	background-color:#0B417F !important;
+	color:#000000 !important;
+}
+*/
+
+.local-scroll:hover{
 	background-color:#0B417F !important;
 	color:#000000 !important;
 }
@@ -393,21 +400,135 @@ h3{
 	background-color:rgba(255,255,255,0);
 }
 
+/*AJUSTE MENU DE MEMBROS / PERFIL */
+	
 .menu-membros a{
-	color:#183F76;
+	display:block;
+	color:#ffffff;
+	padding:10px 5px !important;
+	background-color:#183F76;
+	border-top: solid 2px #56C4F1;
+	border-bottom: solid 2px #56C4F1;
+	width:75%;
 }
 
 .menu-membros a:hover{
+	display:block;
 	color:#ffffff;
-	background-color:#183F76;
-}
-
-ul.menu-membros{
-	background-color:#ffffff;
-	list-style-type:none;
+	background-color:#259b5f;
+	padding:10px 5px !important;
+	text-decoration:none;
+	border-top: solid 2px #183F76;
+	border-bottom: solid 2px #183F76;
+	width:75%;
 }
 
 li.menu-membros{
-	background-color:#ffffff;
 	list-style-type:none;
+	margin:10px 0px;
+	padding:10px 5px !important;
+}
+
+.entry ul, .entry ol{
+	margin:0 !important;
+}
+
+/*AJUSTE MENU DO TREINADOR */
+.menu-trainer a{
+	display:block;
+	color:#ffffff;
+	background-color:#259b5f;
+	padding:10px 5px !important;
+	text-decoration:none;
+	border-top: solid 2px #183F76;
+	border-bottom: solid 2px #183F76;
+	width:75%;
+}
+
+.menu-trainer a:hover{
+	display:block;
+	color:#ffffff;
+	padding:10px 5px !important;
+	background-color:#183F76;
+	border-top: solid 2px #56C4F1;
+	border-bottom: solid 2px #56C4F1;
+	width:75%;
+}
+
+li.menu-trainer{
+	list-style-type:none;
+	margin:10px 0px;
+	padding:10px 5px !important;
+}
+
+
+/*AJUSTE FORM RELATÓRIO DE FASE E SESSÃO - AREA DE MEMBROS*/
+
+input[type="text"].input-txt-rel-fase{
+	background-color:transparent;
+	border:0;
+	border-bottom:solid 1px #b3b3b3;
+	outline:0;
+	width:100%;	
+}
+
+input[type="text"].input-txt-rel-fase:focus{
+	border:0;
+	border-bottom:solid 1px #48C1F0;
+	outline:0;
+	width:100%;
+	background-color:transparent;
+}
+
+.select-txtarea-rel-fase{
+	background-color:#ffffff;
+	border: solid 1px #b3b3b3;
+	width:100%;
+	height:40px;
+}
+
+.select-txtarea-rel-fase:focus{
+	background-color: #ffffff;
+    border: solid 1px #48C1F0;
+	width:100%;
+	height:40px;
+}
+
+.input-txtarea-rel-fase{
+	border: solid 1px #b3b3b3;
+	width:100%;
+}
+
+.input-txtarea-rel-fase:focus{
+	border: solid 1px #48C1F0;
+	width:100%;
+	background-color:#ffffff;
+}
+
+.form-sucesso{
+	background-color:#DFF0D8;
+	padding:10px;
+	font-family:Gotham-Light;
+	font-size:14px;
+	color:#3c763d;
+}
+
+.form-erro{
+	background-color:#F2DEDE;
+	padding:10px;
+	font-family:Gotham-Light;
+	font-size:14px;
+	color:#a94442;
+}
+
+input[type="password"].input-pwd{
+	background-color:transparent;
+	border:solid 1px #b3b3b3;
+	width:30%;	
+}
+
+input[type="password"].input-pwd:focus{
+	border:solid 1px #48C1F0;
+	width:30%;
+	background-color:transparent;
 }
